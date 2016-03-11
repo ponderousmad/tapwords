@@ -1,0 +1,13 @@
+.inactive {
+    color: rgb(192,192,192);
+}
+
+.active {
+    color: rgb(32,32,32);
+}
+
+.tapper {
+    height: 100px;
+    width: 150px;
+    margin-top: 20%;
+}
