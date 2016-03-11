@@ -1,4 +1,4 @@
-var AUDIO = (function (baseURL) {
+var AUDIO = (function () {
     "use strict";
 
     var gAudioContext = null,
@@ -46,8 +46,6 @@ var AUDIO = (function (baseURL) {
         sound.source = null;
         sound.buffer = null;
         sound.loop = loop;
-        
-        resource = baseURL + resource;
         
         if (gVorbisSupport) {
             resource += ".ogg";
@@ -147,4 +145,4 @@ var AUDIO = (function (baseURL) {
         Music: Music,
         noteOn: audioNoteOn
     };
-}(rootURL));
+}());
