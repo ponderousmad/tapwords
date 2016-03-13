@@ -1,13 +1,47 @@
+.faded {
+    color: rgb(32,32,32)
+}
+
 .inactive {
-    color: rgb(192,192,192);
+    animation-duration: 15s;
+    animation-name: fadeOut;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-out;
 }
 
 .active {
-    color: rgb(32,32,32);
+    animation-duration: .1s;
+    animation-name: fadeIn;
+    animation-fill-mode: forwards;
+    text-decoration: underline;
+}
+
+.para {
+    font-size: larger;
+    margin-bottom: 10px;
+    width: 600px;
+}
+
+.content {
 }
 
 .tapper {
     height: 100px;
     width: 150px;
-    margin-top: 20%;
+    margin-top: 50px;
+    position: absolute;
+    left: 650px;
+    top: 0px;
+}
+
+@keyframes fadeIn {
+  to {
+    color: rgb(255,32,32);
+  }
+}
+
+@keyframes fadeOut {
+  to {
+    color: rgb(32,32,32);
+  }
 }

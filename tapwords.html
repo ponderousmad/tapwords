@@ -7,11 +7,27 @@
   </head>
   <body>
     <h1>Tapwords</h1>
-    <div class="inactive">
-        <span id="w0" class="active">This</span> <span id="w1">is</span> <span id="w2">some</span> <span id="w3">text.</span>
+    <div id="content" class="faded">
+        <div class="para">
+            This is an experimental tool that helps a reader keep track of their position in the text by simply tapping or clicking on the 'NEXT' button for each word they read. With each tap the next word is highlighted, allowing the reader to proceed at their own rate.
+        </div>
+        <div class="para">
+            The highlighting technique used is probably not ideal. This was just the first one that I found that was both obvious and didn't significally shift any of the adjacent text, which would be very distracting.
+        </div>
+        <div class="para">
+            It should be possible to implement as an extension, allowing for the user to have this capability for the pages they want to read. However there are likely to be some limitations which would prevent it from working in practice. For example, it uses CSS styles and the styles used may cause issues with some pages.
+        </div>
+        <div class="para">
+            I've only done minimal testing to see if it works with HTML features like:
+        </div class="para">
+            <ul>
+                <li>Lists</li>
+                <li><a href="https://en.wikipedia.org/wiki/Hyperlink">hyperlinks</a></li>
+                <li><button>Buttons</button></li>
+            </ul>
     </div>
     <button id="go" class="tapper">
-        TAP
+        NEXT
     </button>
   </body>
 </html>
